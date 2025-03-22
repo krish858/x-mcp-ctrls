@@ -14,7 +14,7 @@ Setting up your the MCP is simple and requires just three steps:
 
 2. **install and Build the project**
    ```bash
-   npm install 
+   npm install
    npm run build
    ```
 3. **Update Your Configuration**
@@ -32,11 +32,13 @@ Setting up your the MCP is simple and requires just three steps:
                "X_API_SECRET_KEY": "YOUR_API_KEY",
                "X_BEARER_TOKEN": "YOUR_API_KEY",
                "X_ACCESS_TOKEN": "YOUR_API_KEY2",
-               "X_ACCESS_TOKEN_SECRET": "YOUR_API_KEY"
+               "X_ACCESS_TOKEN_SECRET": "YOUR_API_KEY",
+               "GEMINI_API_KEY": "YOUR_API_KEY" // ONLY IF YOU WANT IMG GENERATION
              }
          }
      }
    }
+   ```
 
 <br>
 **Restart you app and now your mcp is configured just tell Ai agent to do something and See the Magic!!

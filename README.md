@@ -25,14 +25,14 @@ Setting up your the MCP is simple and requires just three steps:
          "x-mcp-ctrls": {
              "command": "node",
              "args": [
-                 "C:\\Users\\Krish\\Downloads\\mcp-starter-master\\x-mcp-ctrls\\build\\index.js"
+                 "PATH_TO_DOWNLOADED_FOLDER\\build\\index.js"
              ],
              "env":{
-               "X_API_KEY": "tDu0RG8JVpKRV6x0H2CMXTRXB",
-               "X_API_SECRET_KEY": "FNo7RXVrDQ4mr4GJR0a8io5IopP6YeQ4rCV78s8Gjbrm5JZykX",
-               "X_BEARER_TOKEN": "AAAAAAAAAAAAAAAAAAAAAClM0AEAAAAAuAjgWh9qDLLOT1vCCvkAcyrNBXY%3Dwd4tNxZOZU9NBxjckyHTVGF3UWoFEfnu9QgW20BoZ7PsQnPo7G",
-               "X_ACCESS_TOKEN": "1754568305132941312-iD8M1uapAn5XzhKz5svq3oH5CHF8r2",
-               "X_ACCESS_TOKEN_SECRET": "uaDpsoVsmQOKH278bD3ih9aT1C2D5MzX02ZIx2eCCwTfu"
+               "X_API_KEY": "YOUR_API_KEY",
+               "X_API_SECRET_KEY": "YOUR_API_KEY",
+               "X_BEARER_TOKEN": "YOUR_API_KEY",
+               "X_ACCESS_TOKEN": "YOUR_API_KEY2",
+               "X_ACCESS_TOKEN_SECRET": "YOUR_API_KEY"
              }
          }
      }

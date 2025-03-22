@@ -161,16 +161,45 @@ server.tool(
 server.tool(
   "fetch-x-acc",
   "fetch deatails about a x account ",
-  { accountname: z.string() },
-  async ({ accountname }) => {
-    return {
-      content: [
-        {
-          type: "text",
-          text: "currently under construction",
-        },
-      ],
-    };
+  { username: z.string() },
+  async ({ username }) => {
+    try {
+      const twitterV2Client = userClient.v2;
+      const user = await twitterV2Client.userByUsername(username, {
+        "user.fields":
+          "description,profile_image_url,public_metrics,location,verified",
+      });
+      if (!user) {
+        throw new Error(`User with username "${username}" not found.`);
+      }
+      return {
+        content: [
+          {
+            type: "text",
+            text: `
+            User Info: \n
+            name: ${user.data.name} \n
+            description: ${user.data.description} \n
+            profile_img: ${user.data.profile_image_url} \n
+            verified: ${user.data.verified} \n
+            followers: ${user.data.public_metrics?.followers_count} \n
+            following: ${user.data.public_metrics?.following_count} \n
+            tweets_cnt: ${user.data.public_metrics?.tweet_count} \n
+            like_cnt: ${user.data.public_metrics?.like_count}
+            `,
+          },
+        ],
+      };
+    } catch (error) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: `Some error occoured ... \n ${error}`,
+          },
+        ],
+      };
+    }
   }
 );
 

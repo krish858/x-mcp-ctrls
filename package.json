@@ -1,0 +1,23 @@
+{
+  "name": "x-mcp-ctrls",
+  "type": "module",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.13.11"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "twitter-api-v2": "^1.21.0",
+    "zod": "^3.24.2"
+  }
+}

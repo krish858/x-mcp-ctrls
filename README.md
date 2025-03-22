@@ -1,36 +1,42 @@
-# MCP Starter Template
+# X-MCR-CTRLS
 
-A streamlined template to accelerate your MCP development workflow.
+CONTROLL YOUR X THROUGH LLM AGENTS.
 
 ## Overview
 
-This starter template provides everything you need to quickly begin developing and deploying your own Model Control Protocol (MCP) implementations.
+X-MCP-Ctrl allows control of your and X-Acc through LLM agents using in apps like Claude-desktop/cursor.
 
-## Getting Started
+## Setup-Guide
 
-Setting up your MCP project is simple and requires just three steps:
+Setting up your the MCP is simple and requires just three steps:
 
-1. **Implement your code changes**
-   - Write your custom tools and functionality
-   - Customize the template to meet your specific requirements
+1. **Clone this repo.**
 
-2. **Build your project**
+2. **install and Build the project**
    ```bash
+   npm install 
    npm run build
    ```
 3. **Update Your Configuration**
    Paste the following JSON configuration into your Claude or Cursor setup:
    ```JSON
-   {
-    "mcpServers": {
-        "YOUR_MCP_NAME": {
-            "command": "node",
-            "args": [
-                "C:\\PATH\\TO\\PARENT\\FOLDER\\weather\\build\\index.js"
-            ]
-        }
-    }
+      {
+     "mcpServers": {
+         "x-mcp-ctrls": {
+             "command": "node",
+             "args": [
+                 "C:\\Users\\Krish\\Downloads\\mcp-starter-master\\x-mcp-ctrls\\build\\index.js"
+             ],
+             "env":{
+               "X_API_KEY": "tDu0RG8JVpKRV6x0H2CMXTRXB",
+               "X_API_SECRET_KEY": "FNo7RXVrDQ4mr4GJR0a8io5IopP6YeQ4rCV78s8Gjbrm5JZykX",
+               "X_BEARER_TOKEN": "AAAAAAAAAAAAAAAAAAAAAClM0AEAAAAAuAjgWh9qDLLOT1vCCvkAcyrNBXY%3Dwd4tNxZOZU9NBxjckyHTVGF3UWoFEfnu9QgW20BoZ7PsQnPo7G",
+               "X_ACCESS_TOKEN": "1754568305132941312-iD8M1uapAn5XzhKz5svq3oH5CHF8r2",
+               "X_ACCESS_TOKEN_SECRET": "uaDpsoVsmQOKH278bD3ih9aT1C2D5MzX02ZIx2eCCwTfu"
+             }
+         }
+     }
    }
+
 <br>
-**This template is designed to simplify and streamline the setup of your MCP project. If you encounter any issues or need further clarification, refer to the <a href="https://modelcontextprotocol.io/introduction">official documentation</a> or contact support.
-Happy coding!**
+**Restart you app and now your mcp is configured just tell Ai agent to do something and See the Magic!!

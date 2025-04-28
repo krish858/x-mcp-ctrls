@@ -1,4 +1,4 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/mseep-audited.png)](https://mseep.ai/app/krish858-x-mcp-ctrls)
+[![MseeP.ai Security Assessment Badge](https://mseep.net/mseep-audited.png)](https://mseep.ai/app/krish858-x-mcp-ctrls) [![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/7ee7050e-ea94-4239-be01-49444b838e45)
 
 # X-MCR-CTRLS
 

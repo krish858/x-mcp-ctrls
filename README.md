@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/mseep-audited.png)](https://mseep.ai/app/krish858-x-mcp-ctrls)
+
 # X-MCR-CTRLS
 
 CONTROLL YOUR X THROUGH LLM AGENTS.
